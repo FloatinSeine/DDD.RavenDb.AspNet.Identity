@@ -1,6 +1,6 @@
-# Asp.Net v4.5 Identity with RavenDB using a DDD approach
+# Asp.Net v4.5 Identity with RavenDB using a DDD approach to managing customer accounts
 
-Created the following sample application to demonstrate using a domain driven design (DDD) approach to managing Customers Accounts and Logins, to create a very decoupled application
+Sample application to demonstrate using a domain driven design (DDD) approach to managing Customers Accounts and Logins, to create a very decoupled application
 
 This approach uses Asp.Net v4.5 and Identity Framework v2.2.0 with RavenDB v3.0.3599.
 
