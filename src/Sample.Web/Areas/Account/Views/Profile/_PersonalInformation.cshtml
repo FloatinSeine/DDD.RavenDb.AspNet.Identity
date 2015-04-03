@@ -1,0 +1,25 @@
+﻿@model Sample.Web.Areas.Account.Models.PersonalInformationViewModel
+
+@using (Html.BeginForm("PersonalInformation", "Profile"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </li>
+        </ol>
+        <input type="submit" value="Change" />
+    </fieldset>
+}
+

@@ -1,0 +1,19 @@
+﻿@model Sample.Web.Areas.Account.Models.ProfileViewModel
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+<p>You're logged in as <strong>@User.Identity.Name</strong>.</p>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div style="width:350px; float:left;">
+        @Html.Partial("_PersonalInformation", Model.Personal)
+
+    </div>
+    <div style="width:350px; float:left;">
+
+    </div>
+}
